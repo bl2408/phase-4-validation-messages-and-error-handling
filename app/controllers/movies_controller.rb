@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    movie = Movie.create(movie_params)
+    movie = Movie.create!(movie_params)
     render json: movie, status: :created
   end
 
